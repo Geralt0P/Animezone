@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>All products - Animezone</title>
+     <link rel="stylesheet" href="Style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     
+     <div class="container">
+      <div class="navbar">
+          <div class="logo">
+                <a href="index.php"><img src="image/background.png" width="125px"></a>
+          </div>
+          <nav>
+               <ul id="MenuItems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    
+                    <li class="nav-item active"><a class="nav-link" href="#"> <img src="https://img.icons8.com/metro/26/000000/guest-male.png"> <?php echo "Welcome ". $_SESSION['username']?></a></li>
+                     <li><a href="logout.php">Logout</a></li>
+               </ul>
+           </nav> 
+           <a href="cart.html"><img src="image/cart.png" width="30px height="30px></a> 
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">  
+      </div> 
+     </div>
+ 
+ <!----------Single product details------------->
+     <div class="small-container single-product">
+          <div class="row">
+               <div class="col-2">
+                    <img src="image/product-10.jpg" width="100%" id="ProductImg">
+                    <div class="small-img-row">
+                         <div class="small-img-col">
+                              <img src="image/product-10.jpg" width="100%" class="small-img">
+                         </div>
+                          <div class="small-img-col">
+                              <img src="image/pain-2.jpg" width="100%" class="small-img">
+                         </div>
+                          <div class="small-img-col">
+                              <img src="image/pain-3.jpg" width="100%" class="small-img">
+                         </div>
+                          <div class="small-img-col">
+                              <img src="image/pain-4.jpg" width="100%" class="small-img">
+                         </div>
+                    </div>
+
+
+
+
+               </div>
+               <div class="col-2">
+                    <p>Home / Product</p>
+                    <h1>Epic Stuff - Naruto - Nagato Pain Ruled Binded A5 Notebook (Flat Lay & Soft Cover) - Notebooks For Anime Fans / Stationery Items For Naruto Fandom</h1>
+                    <h4>₹249.00</h4>
+                    <input type="number" value="1">
+                    <a href="" class="btn">Add To Cart</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Epic Stuff “Naruto” A5 Notebook for Anime Fandom like you to pen down your exciting thoughts. The notebook consists of 96 ruled A5 pages made up of 80 GSM natural paper. The soft front cover is made of photo quality 300 gsm craft paper. The design is digitally printed in HD for ultimate vibrancy. The cover is laminated with a glossy finish for durable elegance. This notebook is designed with sturdy binding, which makes it easy to open due to its lay-flat design. Keep your fandom alive and remember all those great memories you had by writing them down. A perfect gift to your otaku fans on their birthdays, anniversaries, and other special occasions.</p>
+               </div>
+          </div>
+     </div>
+<!--------------title------------>
+     <div class="small-container">
+         <div class="row row-2">
+             <h2>Related Products</h2>
+             <p>View More</p>
+          </div>
+     </div>
+
+
+
+
+<!-------------products---------->
+      <div class="small-container">
+         
+          <div class="row">
+                               <div class="col-4">
+                    <a href="onepiece.html"><img src="image/product-1.jpg"></a>
+                    <a href="onepiece.html"><h4> One Piece - New 3B. wanted Monkey D luffy Design A3 Size Poster (Without Frame)</h4></a>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>   
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star-o"></i> 
+                    </div>
+                    <p>₹179.00</p>
+               </div>
+               <div class="col-4">
+                    <a href="onepiecetoy.html"><img src="image/product-2.jpg"></a>
+                    <a href="onepiecetoy.html"><h4>Kawaii Kart | One Piece Monkey D. Luffy Action Figures - Set of 5 | One Piece Anime Toy Gift Statu</h4></a>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>   
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star-half-o"></i> 
+                    </div>
+                    <p>₹2,374.00</p>
+               </div>
+               <div class="col-4">
+                    <a href="chainsaw.html"><img src="image/product-3.jpg"></a>
+                    <a href="chainsaw.html"><h4>CHAINSAW MAN VOL 1</h4></a>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>   
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star-half-o"></i> 
+                      <i class="fa fa-star-o"></i> 
+                    </div>
+                    <p>₹399.00</p>
+               </div>
+               <div class="col-4">
+                    <a href="demon.html"><img src="image/product-4.jpg"></a>
+                    <a href="demon.html"><h4> Dot Badges Nezuko Kamado - Demon Slayer - Black Anime T Shirt - for Casual Branded Street wear for Men and Women T-Shirt Clothing</h4></a>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>   
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i>  
+                      <i class="fa fa-star"></i> 
+                      <i class="fa fa-star-o"></i> 
+                    </div>
+                    <p>₹649.00</p>
+               </div>
+          </div>
+          </div>
+
+         
+     </div>
+             
+<!----------footer----------->
+
+     <div  class="footer">
+          <div class="container">
+               <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                         <div class="app-logo"> 
+                             <img src="image/play-store.png">
+                             <img src="image/app-store.png">
+                         </div> 
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="image/background1.png">
+                        <p>Our Purpose Is To provide Anime materials and things to the Anime fan and Weeb people.</p>   
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                         </ul>   
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                         </ul>   
+                    </div>
+               </div>
+               <hr>
+               <p class="copyright">Copyright 2023 - Amit Singh</p>
+          </div>
+     </div>
+<!--------------js for toggle menu------------>
+     <script>
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+               if(MenuItems.style.maxHeight = "0px")
+               {
+                    MenuItems.style.maxHeight = "200px";
+               }
+               else
+               {
+                    MenuItems.style.maxHeight = "0px";
+               }
+          }
+     </script>
+
+
+<!----------------js for product gallery--------------->
+     <script> 
+          var ProductImg = document.getElementById("ProductImg");
+          var SmallImg = document.getElementsByClassName("small-img");
+             SmallImg[0].onclick = function()
+             {
+               ProductImg.src = SmallImg[0].src;
+             }
+              SmallImg[1].onclick = function()
+             {
+               ProductImg.src = SmallImg[1].src;
+             }
+              SmallImg[2].onclick = function()
+             {
+               ProductImg.src = SmallImg[2].src;
+             }
+              SmallImg[3].onclick = function()
+             {
+               ProductImg.src = SmallImg[3].src;
+             }
+     </script>
+
+
+
+</body>
+</html>

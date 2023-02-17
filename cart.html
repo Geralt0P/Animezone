@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>All products - Animezone</title>
+     <link rel="stylesheet" href="Style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     
+     <div class="container">
+      <div class="navbar">
+          <div class="logo">
+                <a href="index.php"><img src="image/background.png" width="125px"></a>
+          </div>
+          <nav>
+               <ul id="MenuItems">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"> <img src="https://img.icons8.com/metro/26/000000/guest-male.png"> <?php echo "Welcome ". $_SESSION['username']?></a></li>
+                     <li><a href="logout.php">Logout</a></li>
+               </ul>
+           </nav> 
+           <a href="cart.html"><img src="image/cart.png" width="30px height="30px></a> 
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">  
+      </div> 
+     </div>
+
+<!------------------cart items detail------------>
+<div class="small-container cart-page">
+     <table>
+          <tr>
+               <th>Product</th>
+               <th>Quantity</th>
+               <th>Subtotal</th>
+          </tr>
+          <tr>
+               <td>
+                    <div class="cart-info">
+                         <img src="image/gallery-1.jpg">
+                         <div>
+                              <p>One Piece Posture</p>
+                              <small>price: ₹179.00</small>
+                              <br>
+                              <a href="">Remove</a>
+                         </div>
+                    </div>
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>₹179.00</td>
+          </tr>
+           <tr>
+               <td>
+                    <div class="cart-info">
+                         <img src="image/product-2.jpg">
+                         <div>
+                              <p>One Piece Monkey D. Luffy Action Figures</p>
+                              <small>price: ₹2,374.00</small>
+                              <br>
+                              <a href="">Remove</a>
+                         </div>
+                    </div>
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>₹2,374.00</td>
+          </tr>
+           <tr>
+               <td>
+                    <div class="cart-info">
+                         <img src="image/product-3.jpg">
+                         <div>
+                              <p>CHAINSAW MAN VOL 1</p>
+                              <small>price: ₹399.00</small>
+                              <br>
+                              <a href="">Remove</a>
+                         </div>
+                    </div>
+               </td>
+               <td><input type="number" value="1"></td>
+               <td>₹399.00</td>
+          </tr>
+     </table>
+     
+     <div class="total-price">
+          <table>
+               <tr>
+                    <td>Subtotal</td>
+                    <td>₹2952</td>
+               </tr>
+               <tr>
+                    <td>Tax</td>
+                    <td>₹18.0</td>
+               </tr>
+               <tr>
+                    <td>Total</td>
+                    <td>₹2970.00</td>
+               </tr>
+          </table>
+     </div>
+
+
+</div>
+ 
+
+             
+<!----------footer----------->
+
+     <div  class="footer">
+          <div class="container">
+               <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                         <div class="app-logo"> 
+                             <img src="image/play-store.png">
+                             <img src="image/app-store.png">
+                         </div> 
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="image/background1.png">
+                        <p>Our Purpose Is To provide Anime materials and things to the Anime fan and Weeb people.</p>   
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                         </ul>   
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                         </ul>   
+                    </div>
+               </div>
+               <hr>
+               <p class="copyright">Copyright 2023 - Amit Singh</p>
+          </div>
+     </div>
+<!--------------js for toggle menu------------>
+     <script>
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+               if(MenuItems.style.maxHeight = "0px")
+               {
+                    MenuItems.style.maxHeight = "200px";
+               }
+               else
+               {
+                    MenuItems.style.maxHeight = "0px";
+               }
+          }
+     </script>
+
+
+
+
+</body>
+</html>
